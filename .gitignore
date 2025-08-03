@@ -1,0 +1,19 @@
+
+target/
+dbt_packages/
+logs/
+
+# Sensitive files
+profiles.yml
+.env
+
+# dbt artifacts
+target/
+dbt_modules/
+logs/
+.dbt/
+
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,12 @@
+
+sources:
+  - name: tpch
+    database: ASOS_DB
+    schema: WH_RAW
+    tables:
+      - name: RAW_MASTER_FILE
+        columns:
+          - name: NAME
+#            tests:
+#              - unique
+#              - not_null

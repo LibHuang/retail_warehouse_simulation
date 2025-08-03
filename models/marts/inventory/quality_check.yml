@@ -1,0 +1,7 @@
+models:
+  - name: dim_products
+    columns:
+      - name: PRODUCTCODE
+#        tests:
+#          - unique
+#          - not_null
