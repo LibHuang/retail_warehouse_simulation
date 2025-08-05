@@ -12,9 +12,11 @@ Defined project structure and behavior via dbt_project.yml, and incorporated rel
 
 ### 3. Source and Staging Models
 Established source definitions to represent raw Snowflake tables and created staging models to cleanse, standardize, and document incoming data.
+Source File: ASOS json files via Snowflake
 
 ### 4. Core Data Modeling
 Developed transformation models including fact and dimension tables, along with data marts, following best practices in modular modeling.
+Tables: dim_products, dim_customers, fact_sales, dim_price_history
 
 ### 5. Macros and Reusability
 Implemented custom macros to encapsulate reusable logic, improving maintainability and consistency across models.
