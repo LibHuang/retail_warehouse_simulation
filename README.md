@@ -1,6 +1,21 @@
 # Summary: Retail Inventory & Demand Forecast Platform
 
-The purpose of this project is to build a modular, end‑to‑end data pipeline to support real‑time inventory tracking, demand forecasting, and ensure resource optimization for the highest profit margins with structured and unstructured data for a retail company. I'm currently simulating structured ASOS data and unstructured Customer Segmentation data for this project. This project consists of raw-to-curated zone transformations using dbt and Snowflake SQL. It supports daily sales reporting and customer segmentation, and there will be more features for this project when applicable.
+The purpose of this project is to build a modular, end‑to‑end data pipeline to support real‑time inventory tracking, demand forecasting, and ensure resource optimization with structured and unstructured retail data. 
+
+I'm currently simulating structured ASOS retail inventory data pulled from the ASOS API and creating sample unstructured Customer Segmentation data with column features that are typically best practices within retail. This dbt workflow consists of raw-to-production zone transformations leveraging SQL and YAML files to support all incoming data. There will be more features for this project when applicable.
+
+### Current dbt workflow
+dbt_project/
+├── models/
+│   ├── marts/
+│   │   ├── inventory/
+│   │   │   ├── dim_customers.sql
+│   │   │   ├── dim_price_history.sql
+│   │   │   └── fact_sales.sql
+│   │   ├── customers/
+│   │   │   ├── dim_customer.sql
+│   │   └── ...
+
 
 The key stages included:
 
