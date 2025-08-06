@@ -22,21 +22,17 @@ dbt_project/
 
 The key stages included:
 
-### 1. Environment Setup
+##### 1. Environment Setup
 Configured the dbt environment with Snowflake, including profile settings and credentials, to enable secure data access and transformations.
 
-### 2. Project Configuration
+##### 2. Project Configuration
 Defined project structure and behavior via dbt_project.yml, and incorporated relevant dbt packages to extend functionality.
 
 ### 3. Source and Staging Models
 Established source definitions to represent raw Snowflake tables and created staging models to cleanse, standardize, and document incoming data.
 
-Source File: ASOS json files via Snowflake
-
 ### 4. Core Data Modeling
 Developed transformation models including fact and dimension tables, along with data marts, following best practices in modular modeling.
-
-Tables: dim_products, dim_customers, fact_sales, dim_price_history
 
 ### 5. Macros and Reusability
 Implemented custom macros to encapsulate reusable logic, improving maintainability and consistency across models.
