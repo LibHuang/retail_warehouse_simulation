@@ -6,6 +6,7 @@ I'm currently simulating structured ASOS retail inventory data pulled from the A
 
 ### Current dbt workflow
 dbt_project/
+```text
 ├── models/
 │   ├── marts/
 │   │   ├── inventory/
@@ -15,6 +16,8 @@ dbt_project/
 │   │   ├── customers/
 │   │   │   ├── dim_customer.sql
 │   │   └── ...
+```
+
 
 
 The key stages included:
