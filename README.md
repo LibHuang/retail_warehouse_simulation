@@ -28,14 +28,14 @@ Configured the dbt environment with Snowflake, including profile settings and cr
 ##### 2. Project Configuration
 Defined project structure and behavior via dbt_project.yml, and incorporated relevant dbt packages to extend functionality.
 
-### 3. Source and Staging Models
+##### 3. Source and Staging Models
 Established source definitions to represent raw Snowflake tables and created staging models to cleanse, standardize, and document incoming data.
 
-### 4. Core Data Modeling
+##### 4. Core Data Modeling
 Developed transformation models including fact and dimension tables, along with data marts, following best practices in modular modeling.
 
-### 5. Macros and Reusability
+##### 5. Macros and Reusability
 Implemented custom macros to encapsulate reusable logic, improving maintainability and consistency across models.
 
-### 6. Testing and Validation
+##### 6. Testing and Validation
 Applied both generic tests (e.g., not_null, unique) and custom singular tests to enforce data quality and validate business rules.
