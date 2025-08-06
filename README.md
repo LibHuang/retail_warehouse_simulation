@@ -1,4 +1,4 @@
-# Summary: Retail Inventory & Demand Forecast Platform
+# Retail Inventory & Demand Forecast Platform
 
 The purpose of this project is to build a modular, end‑to‑end data pipeline to support real‑time inventory tracking, demand forecasting, and ensure resource optimization with structured and unstructured retail data. 
 
