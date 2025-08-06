@@ -3,6 +3,7 @@ sources:
   - name: tpch
     database: ASOS_DB
     schema: WH_RAW
+
     tables:
       - name: RAW_MASTER_FILE
         columns:
@@ -10,3 +11,6 @@ sources:
 #            tests:
 #              - unique
 #              - not_null
+
+      - name: CUSTOMERS_RAW
+        description: Raw customers
