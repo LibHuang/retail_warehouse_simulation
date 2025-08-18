@@ -18,10 +18,10 @@ dbt_project/
 │   │   └── ...
 ```
 ##### Project Configuration and Table Listings
-The inventory table includes the current inventory that ASOS currently carries for sale.
-The dimensional price history table encapsulates the daily pricing for each unique product.
-The fact sales table is the raw table of the simulated amounts of sales per day of customers purchasing items.
-The dimensional customer table contains the master file of each simulated customer's unique profile and their total purchases within ASOS data.
+The `fact_inventory` table captures the current stock levels for products available on ASOS site and mobile app, enabling real-time visibility into inventory health, allocation needs, sell-through and stockout risk analysis. 
+The `dim_price_history` table tracks historical and active prices for each product across time, supporting markdown analysis and price elasticity modeling. 
+The `fact_sales` table records daily transaction-level sales activity, simulating real-world customer purchases by product and date. 
+The `dim_customer` table contains unique customer profiles, including demographics, acquisition channel, and cumulative purchase behavior for retention strategy.
 
 The key stages included:
 
