@@ -1,8 +1,8 @@
 # Retail Inventory & Demand Forecast Platform
 
-The purpose of this project is to build a modular, end‑to‑end data pipeline to support real‑time inventory tracking, demand forecasting, and ensure resource optimization with structured and unstructured retail data. 
+The purpose of this project is to build an end‑to‑end data project to support real‑time inventory tracking and demand forecasting for the brand ASOS, and ensure resource optimization with structured and unstructured retail data. 
 
-I'm currently simulating structured ASOS retail inventory data pulled from the ASOS API and creating sample unstructured Customer Segmentation data with column features that are typically best practices within retail. This dbt workflow consists of raw-to-production zone transformations leveraging SQL and YAML files to support all incoming data. There will be more features for this project when applicable.
+I'm currently simulating structured ASOS retail inventory data pulled from the ASOS API and creating sample unstructured Customer Segmentation data with column features that are typically best practices within retail. This dbt workflow consists of raw-to-production zone transformations leveraging SQL and YAML files to support all incoming data.
 
 ### Current dbt workflow
 dbt_project/
@@ -10,32 +10,36 @@ dbt_project/
 ├── models/
 │   ├── marts/
 │   │   ├── inventory/
-│   │   │   ├── dim_customers.sql
+│   │   │   ├── fact_inventory.sql
 │   │   │   ├── dim_price_history.sql
 │   │   │   └── fact_sales.sql
 │   │   ├── customers/
 │   │   │   ├── dim_customer.sql
 │   │   └── ...
 ```
+##### Project Configuration and Table Listings
+The inventory table includes the current inventory that ASOS currently carries for sale.
+The dimensional price history table encapsulates the daily pricing for each unique product.
+The fact sales table is the raw table of the simulated amounts of sales per day of customers purchasing items.
+The dimensional customer table contains the master file of each simulated customer's unique profile and their total purchases within ASOS data.
 
-
+##### Tools Used
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat&logo=snowflake&logoColor=white)
 
 The key stages included:
 
 ##### 1. Environment Setup
 Configured the dbt environment with Snowflake, including profile settings and credentials, to enable secure data access and transformations.
 
-##### 2. Project Configuration
-Defined project structure and behavior via dbt_project.yml, and incorporated relevant dbt packages to extend functionality.
-
-##### 3. Source and Staging Models
+##### 2. Source, Staging, and Production Modeling
 Established source definitions to represent raw Snowflake tables and created staging models to cleanse, standardize, and document incoming data.
-
-##### 4. Core Data Modeling
 Developed transformation models including fact and dimension tables, along with data marts, following best practices in modular modeling.
 
-##### 5. Macros and Reusability
+##### 3. Macros and Reusability
 Implemented custom macros to encapsulate reusable logic, improving maintainability and consistency across models.
 
-##### 6. Testing and Validation
+##### 4. Testing and Validation
 Applied both generic tests (e.g., not_null, unique) and custom singular tests to enforce data quality and validate business rules.
+
+
