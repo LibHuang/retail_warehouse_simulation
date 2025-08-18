@@ -17,13 +17,18 @@ dbt_project/
 │   │   │   ├── dim_customer.sql
 │   │   └── ...
 ```
-##### Project Configuration and Table Listings
-The `fact_inventory` table captures the current stock levels for products available on ASOS site and mobile app, enabling real-time visibility into inventory health, allocation needs, sell-through and stockout risk analysis. 
-The `dim_price_history` table tracks historical and active prices for each product across time, supporting markdown analysis and price elasticity modeling. 
-The `fact_sales` table records daily transaction-level sales activity, simulating real-world customer purchases by product and date. 
+##### Project Table Configurations
+The `fact_inventory` table captures the current stock levels for products available on ASOS site and mobile app, enabling real-time visibility into inventory health, allocation needs, sell-through and stockout risk analysis.
+
+The `dim_price_history` table tracks historical and active prices for each product across time, supporting markdown analysis and price elasticity modeling.
+
+The `fact_sales` table records daily transaction-level sales activity, simulating real-world customer purchases by product and date.
+
 The `dim_customer` table contains unique customer profiles, including demographics, acquisition channel, and cumulative purchase behavior for retention strategy.
 
-The key stages included:
+
+
+### Project Technical Layout:
 
 ##### 1. Environment Setup
 Configured the dbt environment with Snowflake, including profile settings and credentials, to enable secure data access and transformations.
